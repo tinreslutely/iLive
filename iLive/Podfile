@@ -10,5 +10,9 @@ pod 'Masonry'
 pod 'FSCalendar'
 pod 'MJExtension'
 pod 'PNChart'
+pod 'RESideMenu'
+pod 'CocoaLumberjack'
+pod 'DZNEmptyDataSet'
+pod 'CYLTableViewPlaceHolder'
 
 end

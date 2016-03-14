@@ -13,6 +13,10 @@
 		B52B61471C966C5B00A31341 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B52B61461C966C5B00A31341 /* Assets.xcassets */; };
 		B52B61551C966C5B00A31341 /* iLiveTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B52B61541C966C5B00A31341 /* iLiveTests.m */; };
 		B52B61601C966C5B00A31341 /* iLiveUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = B52B615F1C966C5B00A31341 /* iLiveUITests.m */; };
+		B52B61831C96B9FC00A31341 /* backImage@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B52B617D1C96B9FC00A31341 /* backImage@2x.png */; };
+		B52B61841C96B9FC00A31341 /* backImage@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = B52B617E1C96B9FC00A31341 /* backImage@3x.png */; };
+		B52B61851C96B9FC00A31341 /* JTNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = B52B61801C96B9FC00A31341 /* JTNavigationController.m */; };
+		B52B61861C96B9FC00A31341 /* UIViewController+JTNavigationExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = B52B61821C96B9FC00A31341 /* UIViewController+JTNavigationExtension.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +50,13 @@
 		B52B615B1C966C5B00A31341 /* iLiveUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iLiveUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B52B615F1C966C5B00A31341 /* iLiveUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iLiveUITests.m; sourceTree = "<group>"; };
 		B52B61611C966C5B00A31341 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B52B617D1C96B9FC00A31341 /* backImage@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "backImage@2x.png"; sourceTree = "<group>"; };
+		B52B617E1C96B9FC00A31341 /* backImage@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "backImage@3x.png"; sourceTree = "<group>"; };
+		B52B617F1C96B9FC00A31341 /* JTNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JTNavigationController.h; sourceTree = "<group>"; };
+		B52B61801C96B9FC00A31341 /* JTNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JTNavigationController.m; sourceTree = "<group>"; };
+		B52B61811C96B9FC00A31341 /* UIViewController+JTNavigationExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+JTNavigationExtension.h"; sourceTree = "<group>"; };
+		B52B61821C96B9FC00A31341 /* UIViewController+JTNavigationExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+JTNavigationExtension.m"; sourceTree = "<group>"; };
+		B52B61871C96BA5600A31341 /* iLive-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "iLive-Prefix.pch"; sourceTree = "<group>"; };
 		E33F9D47EABA9A93C8739B7B /* Pods-iLive.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iLive.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iLive/Pods-iLive.debug.xcconfig"; sourceTree = "<group>"; };
 		E50F51198C240BACF498FEC0 /* Pods-iLive.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iLive.release.xcconfig"; path = "Pods/Target Support Files/Pods-iLive/Pods-iLive.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -129,6 +140,7 @@
 			children = (
 				B52B614B1C966C5B00A31341 /* Info.plist */,
 				B52B613B1C966C5B00A31341 /* main.m */,
+				B52B61871C96BA5600A31341 /* iLive-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -184,6 +196,7 @@
 		B52B61711C966D1900A31341 /* Vendors */ = {
 			isa = PBXGroup;
 			children = (
+				B52B617C1C96B9FC00A31341 /* JTNavigationController */,
 			);
 			path = Vendors;
 			sourceTree = "<group>";
@@ -215,6 +228,19 @@
 			children = (
 			);
 			path = Categories;
+			sourceTree = "<group>";
+		};
+		B52B617C1C96B9FC00A31341 /* JTNavigationController */ = {
+			isa = PBXGroup;
+			children = (
+				B52B617D1C96B9FC00A31341 /* backImage@2x.png */,
+				B52B617E1C96B9FC00A31341 /* backImage@3x.png */,
+				B52B617F1C96B9FC00A31341 /* JTNavigationController.h */,
+				B52B61801C96B9FC00A31341 /* JTNavigationController.m */,
+				B52B61811C96B9FC00A31341 /* UIViewController+JTNavigationExtension.h */,
+				B52B61821C96B9FC00A31341 /* UIViewController+JTNavigationExtension.m */,
+			);
+			path = JTNavigationController;
 			sourceTree = "<group>";
 		};
 		C8701DCD90DCDF3695957BDC /* Frameworks */ = {
@@ -332,6 +358,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				B52B61471C966C5B00A31341 /* Assets.xcassets in Resources */,
+				B52B61831C96B9FC00A31341 /* backImage@2x.png in Resources */,
+				B52B61841C96B9FC00A31341 /* backImage@3x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -405,6 +433,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				B52B613F1C966C5B00A31341 /* AppDelegate.m in Sources */,
+				B52B61851C96B9FC00A31341 /* JTNavigationController.m in Sources */,
+				B52B61861C96B9FC00A31341 /* UIViewController+JTNavigationExtension.m in Sources */,
 				B52B613C1C966C5B00A31341 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -526,6 +556,8 @@
 			baseConfigurationReference = E33F9D47EABA9A93C8739B7B /* Pods-iLive.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/OptimizationProfiles/$(PROJECT_NAME)-Prefix.pch";
 				INFOPLIST_FILE = iLive/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.301Studio.iLive;
@@ -538,6 +570,8 @@
 			baseConfigurationReference = E50F51198C240BACF498FEC0 /* Pods-iLive.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/OptimizationProfiles/$(PROJECT_NAME)-Prefix.pch";
 				INFOPLIST_FILE = iLive/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.301Studio.iLive;

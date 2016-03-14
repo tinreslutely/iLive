@@ -84,22 +84,30 @@ strip_invalid_archs() {
 
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
+  install_framework "$CONFIGURATION_BUILD_DIR/CYLTableViewPlaceHolder/CYLTableViewPlaceHolder.framework"
+  install_framework "$CONFIGURATION_BUILD_DIR/CocoaLumberjack/CocoaLumberjack.framework"
+  install_framework "$CONFIGURATION_BUILD_DIR/DZNEmptyDataSet/DZNEmptyDataSet.framework"
   install_framework "$CONFIGURATION_BUILD_DIR/FMDB/FMDB.framework"
   install_framework "$CONFIGURATION_BUILD_DIR/FSCalendar/FSCalendar.framework"
   install_framework "$CONFIGURATION_BUILD_DIR/INTULocationManager/INTULocationManager.framework"
   install_framework "$CONFIGURATION_BUILD_DIR/MJExtension/MJExtension.framework"
   install_framework "$CONFIGURATION_BUILD_DIR/Masonry/Masonry.framework"
   install_framework "$CONFIGURATION_BUILD_DIR/PNChart/PNChart.framework"
+  install_framework "$CONFIGURATION_BUILD_DIR/RESideMenu/RESideMenu.framework"
   install_framework "$CONFIGURATION_BUILD_DIR/TPKeyboardAvoiding/TPKeyboardAvoiding.framework"
   install_framework "$CONFIGURATION_BUILD_DIR/UICountingLabel/UICountingLabel.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
+  install_framework "$CONFIGURATION_BUILD_DIR/CYLTableViewPlaceHolder/CYLTableViewPlaceHolder.framework"
+  install_framework "$CONFIGURATION_BUILD_DIR/CocoaLumberjack/CocoaLumberjack.framework"
+  install_framework "$CONFIGURATION_BUILD_DIR/DZNEmptyDataSet/DZNEmptyDataSet.framework"
   install_framework "$CONFIGURATION_BUILD_DIR/FMDB/FMDB.framework"
   install_framework "$CONFIGURATION_BUILD_DIR/FSCalendar/FSCalendar.framework"
   install_framework "$CONFIGURATION_BUILD_DIR/INTULocationManager/INTULocationManager.framework"
   install_framework "$CONFIGURATION_BUILD_DIR/MJExtension/MJExtension.framework"
   install_framework "$CONFIGURATION_BUILD_DIR/Masonry/Masonry.framework"
   install_framework "$CONFIGURATION_BUILD_DIR/PNChart/PNChart.framework"
+  install_framework "$CONFIGURATION_BUILD_DIR/RESideMenu/RESideMenu.framework"
   install_framework "$CONFIGURATION_BUILD_DIR/TPKeyboardAvoiding/TPKeyboardAvoiding.framework"
   install_framework "$CONFIGURATION_BUILD_DIR/UICountingLabel/UICountingLabel.framework"
 fi

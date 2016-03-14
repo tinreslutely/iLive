@@ -1,0 +1,638 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8B15D011BFFA5008A2586481 /* Pods_iLive.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5BC6F5C481F3A6B381D04A87 /* Pods_iLive.framework */; };
+		B52B613C1C966C5B00A31341 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B52B613B1C966C5B00A31341 /* main.m */; };
+		B52B613F1C966C5B00A31341 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B52B613E1C966C5B00A31341 /* AppDelegate.m */; };
+		B52B61471C966C5B00A31341 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B52B61461C966C5B00A31341 /* Assets.xcassets */; };
+		B52B61551C966C5B00A31341 /* iLiveTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B52B61541C966C5B00A31341 /* iLiveTests.m */; };
+		B52B61601C966C5B00A31341 /* iLiveUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = B52B615F1C966C5B00A31341 /* iLiveUITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B52B61511C966C5B00A31341 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B52B612F1C966C5B00A31341 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B52B61361C966C5B00A31341;
+			remoteInfo = iLive;
+		};
+		B52B615C1C966C5B00A31341 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B52B612F1C966C5B00A31341 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B52B61361C966C5B00A31341;
+			remoteInfo = iLive;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		5BC6F5C481F3A6B381D04A87 /* Pods_iLive.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iLive.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B52B61371C966C5B00A31341 /* iLive.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iLive.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B52B613B1C966C5B00A31341 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B52B613D1C966C5B00A31341 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = iLive/AppDelegate.h; sourceTree = SOURCE_ROOT; };
+		B52B613E1C966C5B00A31341 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = iLive/AppDelegate.m; sourceTree = SOURCE_ROOT; };
+		B52B61461C966C5B00A31341 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B52B614B1C966C5B00A31341 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B52B61501C966C5B00A31341 /* iLiveTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iLiveTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B52B61541C966C5B00A31341 /* iLiveTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iLiveTests.m; sourceTree = "<group>"; };
+		B52B61561C966C5B00A31341 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B52B615B1C966C5B00A31341 /* iLiveUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iLiveUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B52B615F1C966C5B00A31341 /* iLiveUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iLiveUITests.m; sourceTree = "<group>"; };
+		B52B61611C966C5B00A31341 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E33F9D47EABA9A93C8739B7B /* Pods-iLive.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iLive.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iLive/Pods-iLive.debug.xcconfig"; sourceTree = "<group>"; };
+		E50F51198C240BACF498FEC0 /* Pods-iLive.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iLive.release.xcconfig"; path = "Pods/Target Support Files/Pods-iLive/Pods-iLive.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B52B61341C966C5B00A31341 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8B15D011BFFA5008A2586481 /* Pods_iLive.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B52B614D1C966C5B00A31341 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B52B61581C966C5B00A31341 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		845DA7D768A5306A47A64824 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E33F9D47EABA9A93C8739B7B /* Pods-iLive.debug.xcconfig */,
+				E50F51198C240BACF498FEC0 /* Pods-iLive.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		B52B612E1C966C5B00A31341 = {
+			isa = PBXGroup;
+			children = (
+				B52B61391C966C5B00A31341 /* iLive */,
+				B52B61531C966C5B00A31341 /* iLiveTests */,
+				B52B615E1C966C5B00A31341 /* iLiveUITests */,
+				B52B61381C966C5B00A31341 /* Products */,
+				845DA7D768A5306A47A64824 /* Pods */,
+				C8701DCD90DCDF3695957BDC /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		B52B61381C966C5B00A31341 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B52B61371C966C5B00A31341 /* iLive.app */,
+				B52B61501C966C5B00A31341 /* iLiveTests.xctest */,
+				B52B615B1C966C5B00A31341 /* iLiveUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B52B61391C966C5B00A31341 /* iLive */ = {
+			isa = PBXGroup;
+			children = (
+				B52B61751C966D8500A31341 /* Categories */,
+				B52B61741C966D7800A31341 /* Macros */,
+				B52B61731C966D6F00A31341 /* DataControllers */,
+				B52B61721C966D5000A31341 /* Resources */,
+				B52B61711C966D1900A31341 /* Vendors */,
+				B52B61701C966D1100A31341 /* Views */,
+				B52B616F1C966D0900A31341 /* Models */,
+				B52B616E1C966CFE00A31341 /* Controllers */,
+				B52B616D1C966CB600A31341 /* AppDelegate */,
+				B52B613A1C966C5B00A31341 /* Supporting Files */,
+			);
+			path = iLive;
+			sourceTree = "<group>";
+		};
+		B52B613A1C966C5B00A31341 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B52B614B1C966C5B00A31341 /* Info.plist */,
+				B52B613B1C966C5B00A31341 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B52B61531C966C5B00A31341 /* iLiveTests */ = {
+			isa = PBXGroup;
+			children = (
+				B52B61541C966C5B00A31341 /* iLiveTests.m */,
+				B52B61561C966C5B00A31341 /* Info.plist */,
+			);
+			path = iLiveTests;
+			sourceTree = "<group>";
+		};
+		B52B615E1C966C5B00A31341 /* iLiveUITests */ = {
+			isa = PBXGroup;
+			children = (
+				B52B615F1C966C5B00A31341 /* iLiveUITests.m */,
+				B52B61611C966C5B00A31341 /* Info.plist */,
+			);
+			path = iLiveUITests;
+			sourceTree = "<group>";
+		};
+		B52B616D1C966CB600A31341 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				B52B613D1C966C5B00A31341 /* AppDelegate.h */,
+				B52B613E1C966C5B00A31341 /* AppDelegate.m */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		B52B616E1C966CFE00A31341 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		B52B616F1C966D0900A31341 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		B52B61701C966D1100A31341 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		B52B61711C966D1900A31341 /* Vendors */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Vendors;
+			sourceTree = "<group>";
+		};
+		B52B61721C966D5000A31341 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				B52B61461C966C5B00A31341 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		B52B61731C966D6F00A31341 /* DataControllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DataControllers;
+			sourceTree = "<group>";
+		};
+		B52B61741C966D7800A31341 /* Macros */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Macros;
+			sourceTree = "<group>";
+		};
+		B52B61751C966D8500A31341 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		C8701DCD90DCDF3695957BDC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5BC6F5C481F3A6B381D04A87 /* Pods_iLive.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B52B61361C966C5B00A31341 /* iLive */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B52B61641C966C5B00A31341 /* Build configuration list for PBXNativeTarget "iLive" */;
+			buildPhases = (
+				35B69091C5DCCF343EA784CA /* Check Pods Manifest.lock */,
+				B52B61331C966C5B00A31341 /* Sources */,
+				B52B61341C966C5B00A31341 /* Frameworks */,
+				B52B61351C966C5B00A31341 /* Resources */,
+				ADC1B46A9947640D0CA73EB2 /* Embed Pods Frameworks */,
+				708A34C0E63EE2E2C24CF206 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = iLive;
+			productName = iLive;
+			productReference = B52B61371C966C5B00A31341 /* iLive.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B52B614F1C966C5B00A31341 /* iLiveTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B52B61671C966C5B00A31341 /* Build configuration list for PBXNativeTarget "iLiveTests" */;
+			buildPhases = (
+				B52B614C1C966C5B00A31341 /* Sources */,
+				B52B614D1C966C5B00A31341 /* Frameworks */,
+				B52B614E1C966C5B00A31341 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B52B61521C966C5B00A31341 /* PBXTargetDependency */,
+			);
+			name = iLiveTests;
+			productName = iLiveTests;
+			productReference = B52B61501C966C5B00A31341 /* iLiveTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		B52B615A1C966C5B00A31341 /* iLiveUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B52B616A1C966C5B00A31341 /* Build configuration list for PBXNativeTarget "iLiveUITests" */;
+			buildPhases = (
+				B52B61571C966C5B00A31341 /* Sources */,
+				B52B61581C966C5B00A31341 /* Frameworks */,
+				B52B61591C966C5B00A31341 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B52B615D1C966C5B00A31341 /* PBXTargetDependency */,
+			);
+			name = iLiveUITests;
+			productName = iLiveUITests;
+			productReference = B52B615B1C966C5B00A31341 /* iLiveUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B52B612F1C966C5B00A31341 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = "301 Studio";
+				TargetAttributes = {
+					B52B61361C966C5B00A31341 = {
+						CreatedOnToolsVersion = 7.2;
+					};
+					B52B614F1C966C5B00A31341 = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = B52B61361C966C5B00A31341;
+					};
+					B52B615A1C966C5B00A31341 = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = B52B61361C966C5B00A31341;
+					};
+				};
+			};
+			buildConfigurationList = B52B61321C966C5B00A31341 /* Build configuration list for PBXProject "iLive" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B52B612E1C966C5B00A31341;
+			productRefGroup = B52B61381C966C5B00A31341 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B52B61361C966C5B00A31341 /* iLive */,
+				B52B614F1C966C5B00A31341 /* iLiveTests */,
+				B52B615A1C966C5B00A31341 /* iLiveUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B52B61351C966C5B00A31341 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B52B61471C966C5B00A31341 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B52B614E1C966C5B00A31341 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B52B61591C966C5B00A31341 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		35B69091C5DCCF343EA784CA /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		708A34C0E63EE2E2C24CF206 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-iLive/Pods-iLive-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ADC1B46A9947640D0CA73EB2 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-iLive/Pods-iLive-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B52B61331C966C5B00A31341 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B52B613F1C966C5B00A31341 /* AppDelegate.m in Sources */,
+				B52B613C1C966C5B00A31341 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B52B614C1C966C5B00A31341 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B52B61551C966C5B00A31341 /* iLiveTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B52B61571C966C5B00A31341 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B52B61601C966C5B00A31341 /* iLiveUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B52B61521C966C5B00A31341 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B52B61361C966C5B00A31341 /* iLive */;
+			targetProxy = B52B61511C966C5B00A31341 /* PBXContainerItemProxy */;
+		};
+		B52B615D1C966C5B00A31341 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B52B61361C966C5B00A31341 /* iLive */;
+			targetProxy = B52B615C1C966C5B00A31341 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		B52B61621C966C5B00A31341 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		B52B61631C966C5B00A31341 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B52B61651C966C5B00A31341 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E33F9D47EABA9A93C8739B7B /* Pods-iLive.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = iLive/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.301Studio.iLive;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		B52B61661C966C5B00A31341 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E50F51198C240BACF498FEC0 /* Pods-iLive.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = iLive/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.301Studio.iLive;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		B52B61681C966C5B00A31341 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = iLiveTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.301Studio.iLiveTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iLive.app/iLive";
+			};
+			name = Debug;
+		};
+		B52B61691C966C5B00A31341 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = iLiveTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.301Studio.iLiveTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iLive.app/iLive";
+			};
+			name = Release;
+		};
+		B52B616B1C966C5B00A31341 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = iLiveUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.301Studio.iLiveUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = iLive;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		B52B616C1C966C5B00A31341 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = iLiveUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.301Studio.iLiveUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = iLive;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B52B61321C966C5B00A31341 /* Build configuration list for PBXProject "iLive" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B52B61621C966C5B00A31341 /* Debug */,
+				B52B61631C966C5B00A31341 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B52B61641C966C5B00A31341 /* Build configuration list for PBXNativeTarget "iLive" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B52B61651C966C5B00A31341 /* Debug */,
+				B52B61661C966C5B00A31341 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B52B61671C966C5B00A31341 /* Build configuration list for PBXNativeTarget "iLiveTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B52B61681C966C5B00A31341 /* Debug */,
+				B52B61691C966C5B00A31341 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B52B616A1C966C5B00A31341 /* Build configuration list for PBXNativeTarget "iLiveUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B52B616B1C966C5B00A31341 /* Debug */,
+				B52B616C1C966C5B00A31341 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B52B612F1C966C5B00A31341 /* Project object */;
+}

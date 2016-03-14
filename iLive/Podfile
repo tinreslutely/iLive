@@ -1,0 +1,14 @@
+platform :ios, "7.0"
+use_frameworks!
+
+target ‘iLive’ do
+
+pod 'INTULocationManager'
+pod 'FMDB'
+pod 'TPKeyboardAvoiding'
+pod 'Masonry'
+pod 'FSCalendar'
+pod 'MJExtension'
+pod 'PNChart'
+
+end

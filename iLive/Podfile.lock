@@ -1,0 +1,35 @@
+PODS:
+  - FMDB (2.6):
+    - FMDB/standard (= 2.6)
+  - FMDB/standard (2.6)
+  - FSCalendar (1.8.2)
+  - INTULocationManager (4.1.1)
+  - Masonry (0.6.4)
+  - MJExtension (3.0.10)
+  - PNChart (0.8.8):
+    - UICountingLabel (~> 1.2.0)
+  - TPKeyboardAvoiding (1.2.11)
+  - UICountingLabel (1.2.0)
+
+DEPENDENCIES:
+  - FMDB
+  - FSCalendar
+  - INTULocationManager
+  - Masonry
+  - MJExtension
+  - PNChart
+  - TPKeyboardAvoiding
+
+SPEC CHECKSUMS:
+  FMDB: c1968bab3ab0aed38f66cb778ae1e7fa9a652b6e
+  FSCalendar: 5e348e1352f7513096812e4023e39b64b856bb7e
+  INTULocationManager: 83c7373048d583cda57e25eefb9bb8a3675acf16
+  Masonry: 281802d04d787ea2973179ee8bcb50500579ede2
+  MJExtension: d86aacb740c87519d20e3cca55b6fa4be6cc7548
+  PNChart: 25f91e9c4688af49c3647489760624d037f5383f
+  TPKeyboardAvoiding: e5ce146b313de063957bfa75a13f1e9b0ff18ab7
+  UICountingLabel: 1db4e7d023e1762171eb226d6dff47a7a84f27aa
+
+PODFILE CHECKSUM: 3a47267f963fedec91e910b002c1eaaf00e87981
+
+COCOAPODS: 1.0.0.beta.4

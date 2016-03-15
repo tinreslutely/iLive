@@ -11,6 +11,7 @@
 		B529675C1C97AFDD00CD6ABF /* ILHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B529675B1C97AFDD00CD6ABF /* ILHomeViewController.m */; };
 		B529675F1C97AFEE00CD6ABF /* ILBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B529675E1C97AFEE00CD6ABF /* ILBaseViewController.m */; };
 		B52967621C97B07500CD6ABF /* ILLeftMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B52967611C97B07500CD6ABF /* ILLeftMenuViewController.m */; };
+		B52967651C9801DD00CD6ABF /* ILHomeView.m in Sources */ = {isa = PBXBuildFile; fileRef = B52967641C9801DD00CD6ABF /* ILHomeView.m */; };
 		B52B613C1C966C5B00A31341 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B52B613B1C966C5B00A31341 /* main.m */; };
 		B52B613F1C966C5B00A31341 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B52B613E1C966C5B00A31341 /* AppDelegate.m */; };
 		B52B61471C966C5B00A31341 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B52B61461C966C5B00A31341 /* Assets.xcassets */; };
@@ -48,6 +49,8 @@
 		B529675E1C97AFEE00CD6ABF /* ILBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ILBaseViewController.m; sourceTree = "<group>"; };
 		B52967601C97B07500CD6ABF /* ILLeftMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ILLeftMenuViewController.h; sourceTree = "<group>"; };
 		B52967611C97B07500CD6ABF /* ILLeftMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ILLeftMenuViewController.m; sourceTree = "<group>"; };
+		B52967631C9801DD00CD6ABF /* ILHomeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ILHomeView.h; sourceTree = "<group>"; };
+		B52967641C9801DD00CD6ABF /* ILHomeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ILHomeView.m; sourceTree = "<group>"; };
 		B52B61371C966C5B00A31341 /* iLive.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iLive.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B52B613B1C966C5B00A31341 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B52B613D1C966C5B00A31341 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = iLive/AppDelegate.h; sourceTree = SOURCE_ROOT; };
@@ -122,6 +125,8 @@
 			children = (
 				B529675A1C97AFDD00CD6ABF /* ILHomeViewController.h */,
 				B529675B1C97AFDD00CD6ABF /* ILHomeViewController.m */,
+				B52967631C9801DD00CD6ABF /* ILHomeView.h */,
+				B52967641C9801DD00CD6ABF /* ILHomeView.m */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -465,6 +470,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B52967651C9801DD00CD6ABF /* ILHomeView.m in Sources */,
 				B52B613F1C966C5B00A31341 /* AppDelegate.m in Sources */,
 				B52B61851C96B9FC00A31341 /* JTNavigationController.m in Sources */,
 				B52B61861C96B9FC00A31341 /* UIViewController+JTNavigationExtension.m in Sources */,

@@ -43,7 +43,7 @@
 
 #pragma mark private methods
 -(void)setupWindow{
-    RESideMenu *menuController = [[RESideMenu alloc] initWithContentViewController:[[NSClassFromString(@"ILHomeController") alloc] init] leftMenuViewController:[[UIViewController alloc] init] rightMenuViewController:nil];
+    RESideMenu *menuController = [[RESideMenu alloc] initWithContentViewController:[[NSClassFromString(@"ILHomeViewController") alloc] init] leftMenuViewController:[[UIViewController alloc] init] rightMenuViewController:nil];
     self.window = [[UIWindow alloc] initWithFrame:SCREEN_BOUNDS];
     [self.window setRootViewController:menuController];
     [self.window makeKeyAndVisible];

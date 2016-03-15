@@ -9,6 +9,9 @@
 #ifndef iLive_Prefix_pch
 #define iLive_Prefix_pch
 
-#import "JNavigationController.h"
+#import "GlobalMacros.h"
+#import "ILBaseViewController.h"
+#import "JTNavigationController.h"
+#import "RESideMenu.h"
 
 #endif

@@ -37,28 +37,15 @@ typedef struct{
         [_horizontalLineLayer removeAllAnimations];
         [self addPanGesture];
         
-        CGFloat height = SCREEN_BOUNDS.size.height-100;
-//        CAKeyframeAnimation *moveAnimation = [CAKeyframeAnimation animationWithKeyPath:@"position.y"];
-//        moveAnimation.values =@[[NSNumber numberWithFloat:_horizontalLineLayer.frame.origin.y],
-//                                [NSNumber numberWithFloat:height]];
-//        moveAnimation.duration = param.duration;
-//        moveAnimation.removedOnCompletion = NO;
-//        moveAnimation.fillMode = kCAFillModeForwards;
-//        [_horizontalLineLayer addAnimation:moveAnimation forKey:@"xss"];
         
-//        [UIView beginAnimations:nil context:nil];
-//        [UIView setAnimationDuration:0.2];
-//        [UIView commitAnimations];
-//        [UIView beginAnimations:nil context:nil];
-//        [UIView setAnimationDuration:param.duration*2];
-//        [UIView commitAnimations];
-        [_horizontalLineLayer setHidden:YES];
-        [UIView animateWithDuration:0.2 animations:^{
+        CGFloat height = SCREEN_BOUNDS.size.height-100;
+        [_horizontalLineLayer removeFromSuperlayer];
+        _horizontalLineLayer.frame = CGRectMake(0, height, self.frame.size.width, 1);
+        
+        [UIView animateWithDuration:0.5 animations:^{
             self.frame = CGRectMake(0, 0, self.frame.size.width, height);
         } completion:^(BOOL finished) {
-            _horizontalLineLayer.frame = CGRectMake(0, height, self.frame.size.width, 1);
-            [_horizontalLineLayer setHidden:NO];
-            
+            [self.layer addSublayer:_horizontalLineLayer];
         }];
         
     }
@@ -119,38 +106,15 @@ typedef struct{
 }
 
 -(void)animationLeftLineReturnFrom:(CGFloat)positionY{
-    
-    CGFloat height = SCREEN_BOUNDS.size.height-100;
-    
     CAKeyframeAnimation *morph = [CAKeyframeAnimation animationWithKeyPath:@"path"];
     morph.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseIn];
     morph.values = @[(id)[self getBottomLinePathWithAmount:positionY],
                      (id)[self getBottomLinePathWithAmount:0.0]];
-    morph.duration = 2;
+    morph.duration = 0.3;
     morph.removedOnCompletion = NO;
     morph.fillMode = kCAFillModeForwards;
     morph.delegate = self;
     [_horizontalLineLayer addAnimation:morph forKey:tzPullAnimationKey];
-    
-    
-//    CAAnimationGroup *animationGroup = [CAAnimationGroup animation];
-//    animationGroup.animations = @[morph];
-//    animationGroup.removedOnCompletion = NO;
-//    animationGroup.fillMode = kCAFillModeForwards;
-//    animationGroup.duration = 2;
-    
-    
-    
-    
-//    CAKeyframeAnimation *moveAnimation = [CAKeyframeAnimation animationWithKeyPath:@"position.y"];
-//    moveAnimation.values =@[[NSNumber numberWithFloat:_horizontalLineLayer.frame.origin.y],
-//                            [NSNumber numberWithFloat:height]];
-//    moveAnimation.duration = 2;
-//    moveAnimation.removedOnCompletion = NO;
-//    moveAnimation.fillMode = kCAFillModeForwards;
-//    [_horizontalLineLayer addAnimation:moveAnimation forKey:@"xss"];
-//    
-    
 }
 
 -(void)animationBottomLineReturnFrom:(CGFloat)positionY{
@@ -160,7 +124,7 @@ typedef struct{
 #pragma mark public methods
 -(void)setBackgroundColor:(UIColor *)backgroundColor{
     [super setBackgroundColor:backgroundColor];
-    //[_horizontalLineLayer setStrokeColor:backgroundColor.CGColor];
+    [_horizontalLineLayer setStrokeColor:backgroundColor.CGColor];
     [_horizontalLineLayer setFillColor:backgroundColor.CGColor];
 }
 

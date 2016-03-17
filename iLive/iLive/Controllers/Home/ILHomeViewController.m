@@ -7,14 +7,28 @@
 //
 
 #import "ILHomeViewController.h"
+#import "TZPullVerticalView.h"
 
 @implementation ILHomeViewController
 
+#pragma mark life cycle
 -(void)viewDidLoad{
     [super viewDidLoad];
     
-    [self.view addSubview:[[NSClassFromString(@"ILHomeView") alloc] initWithFrame:self.view.bounds]];
+    [self initView];
+    //[self.view addSubview:[[NSClassFromString(@"ILHomeView") alloc] initWithFrame:self.view.bounds]];
 }
+
+#pragma mark action and event methods
+
+
+#pragma mark private methods
+-(void)initView{
+    TZPullVerticalView *view = [[TZPullVerticalView alloc] initWithFrame:CGRectMake(0, 0, SCREEN_BOUNDS.size.width, 100)];
+    [view setBackgroundColor:[UIColor grayColor]];
+    [self.view addSubview:view];
+}
+
 
 -(void)initRectLayer{
     CALayer *rectLayer = [[CALayer alloc] init];

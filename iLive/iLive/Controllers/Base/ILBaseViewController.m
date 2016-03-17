@@ -13,7 +13,8 @@
 -(void)viewDidLoad{
     [super viewDidLoad];
     
-    [self.view setBackgroundColor:[UIColor grayColor]];
+    [self.view setBackgroundColor:[UIColor whiteColor]];
+    [self setAutomaticallyAdjustsScrollViewInsets:NO];
 }
 
 

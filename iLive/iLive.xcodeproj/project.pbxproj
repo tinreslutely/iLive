@@ -21,6 +21,7 @@
 		B52B61841C96B9FC00A31341 /* backImage@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = B52B617E1C96B9FC00A31341 /* backImage@3x.png */; };
 		B52B61851C96B9FC00A31341 /* JTNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = B52B61801C96B9FC00A31341 /* JTNavigationController.m */; };
 		B52B61861C96B9FC00A31341 /* UIViewController+JTNavigationExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = B52B61821C96B9FC00A31341 /* UIViewController+JTNavigationExtension.m */; };
+		B5FE416D1C9A54690096A0D5 /* TZPullVerticalView.m in Sources */ = {isa = PBXBuildFile; fileRef = B5FE416C1C9A54690096A0D5 /* TZPullVerticalView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,8 +50,8 @@
 		B529675E1C97AFEE00CD6ABF /* ILBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ILBaseViewController.m; sourceTree = "<group>"; };
 		B52967601C97B07500CD6ABF /* ILLeftMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ILLeftMenuViewController.h; sourceTree = "<group>"; };
 		B52967611C97B07500CD6ABF /* ILLeftMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ILLeftMenuViewController.m; sourceTree = "<group>"; };
-		B52967631C9801DD00CD6ABF /* ILHomeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ILHomeView.h; sourceTree = "<group>"; };
-		B52967641C9801DD00CD6ABF /* ILHomeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ILHomeView.m; sourceTree = "<group>"; };
+		B52967631C9801DD00CD6ABF /* ILHomeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ILHomeView.h; path = ../../Controllers/Home/ILHomeView.h; sourceTree = "<group>"; };
+		B52967641C9801DD00CD6ABF /* ILHomeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ILHomeView.m; path = ../../Controllers/Home/ILHomeView.m; sourceTree = "<group>"; };
 		B52B61371C966C5B00A31341 /* iLive.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iLive.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B52B613B1C966C5B00A31341 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B52B613D1C966C5B00A31341 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = iLive/AppDelegate.h; sourceTree = SOURCE_ROOT; };
@@ -70,6 +71,9 @@
 		B52B61811C96B9FC00A31341 /* UIViewController+JTNavigationExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+JTNavigationExtension.h"; sourceTree = "<group>"; };
 		B52B61821C96B9FC00A31341 /* UIViewController+JTNavigationExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+JTNavigationExtension.m"; sourceTree = "<group>"; };
 		B52B61871C96BA5600A31341 /* iLive-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "iLive-Prefix.pch"; sourceTree = "<group>"; };
+		B5FE416B1C9A54690096A0D5 /* TZPullVerticalView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TZPullVerticalView.h; sourceTree = "<group>"; };
+		B5FE416C1C9A54690096A0D5 /* TZPullVerticalView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TZPullVerticalView.m; sourceTree = "<group>"; };
+		B5FE416E1C9A5BE40096A0D5 /* App.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = App.h; sourceTree = "<group>"; };
 		E33F9D47EABA9A93C8739B7B /* Pods-iLive.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iLive.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iLive/Pods-iLive.debug.xcconfig"; sourceTree = "<group>"; };
 		E50F51198C240BACF498FEC0 /* Pods-iLive.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iLive.release.xcconfig"; path = "Pods/Target Support Files/Pods-iLive/Pods-iLive.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -125,8 +129,6 @@
 			children = (
 				B529675A1C97AFDD00CD6ABF /* ILHomeViewController.h */,
 				B529675B1C97AFDD00CD6ABF /* ILHomeViewController.m */,
-				B52967631C9801DD00CD6ABF /* ILHomeView.h */,
-				B52967641C9801DD00CD6ABF /* ILHomeView.m */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -156,7 +158,7 @@
 		B52B61391C966C5B00A31341 /* iLive */ = {
 			isa = PBXGroup;
 			children = (
-				B52B61751C966D8500A31341 /* Categories */,
+				B52B61751C966D8500A31341 /* Stores */,
 				B52B61741C966D7800A31341 /* Macros */,
 				B52B61731C966D6F00A31341 /* DataControllers */,
 				B52B61721C966D5000A31341 /* Resources */,
@@ -226,6 +228,7 @@
 		B52B61701C966D1100A31341 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				B5FE41691C9A50700096A0D5 /* Home */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -233,6 +236,7 @@
 		B52B61711C966D1900A31341 /* Vendors */ = {
 			isa = PBXGroup;
 			children = (
+				B5FE416A1C9A53F50096A0D5 /* TZPullVerticalView */,
 				B52B617C1C96B9FC00A31341 /* JTNavigationController */,
 			);
 			path = Vendors;
@@ -261,11 +265,12 @@
 			path = Macros;
 			sourceTree = "<group>";
 		};
-		B52B61751C966D8500A31341 /* Categories */ = {
+		B52B61751C966D8500A31341 /* Stores */ = {
 			isa = PBXGroup;
 			children = (
+				B5FE416E1C9A5BE40096A0D5 /* App.h */,
 			);
-			path = Categories;
+			path = Stores;
 			sourceTree = "<group>";
 		};
 		B52B617C1C96B9FC00A31341 /* JTNavigationController */ = {
@@ -279,6 +284,24 @@
 				B52B61821C96B9FC00A31341 /* UIViewController+JTNavigationExtension.m */,
 			);
 			path = JTNavigationController;
+			sourceTree = "<group>";
+		};
+		B5FE41691C9A50700096A0D5 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				B52967631C9801DD00CD6ABF /* ILHomeView.h */,
+				B52967641C9801DD00CD6ABF /* ILHomeView.m */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		B5FE416A1C9A53F50096A0D5 /* TZPullVerticalView */ = {
+			isa = PBXGroup;
+			children = (
+				B5FE416B1C9A54690096A0D5 /* TZPullVerticalView.h */,
+				B5FE416C1C9A54690096A0D5 /* TZPullVerticalView.m */,
+			);
+			path = TZPullVerticalView;
 			sourceTree = "<group>";
 		};
 		C8701DCD90DCDF3695957BDC /* Frameworks */ = {
@@ -476,6 +499,7 @@
 				B52B61861C96B9FC00A31341 /* UIViewController+JTNavigationExtension.m in Sources */,
 				B529675C1C97AFDD00CD6ABF /* ILHomeViewController.m in Sources */,
 				B52967621C97B07500CD6ABF /* ILLeftMenuViewController.m in Sources */,
+				B5FE416D1C9A54690096A0D5 /* TZPullVerticalView.m in Sources */,
 				B529675F1C97AFEE00CD6ABF /* ILBaseViewController.m in Sources */,
 				B52B613C1C966C5B00A31341 /* main.m in Sources */,
 			);

@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "DDTTYLogger.h"
 
 @interface AppDelegate ()
 
@@ -19,6 +20,7 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
     [self setupWindow];
+    [self setupLogger];
     return YES;
 }
 
@@ -43,9 +45,15 @@
 
 #pragma mark private methods
 -(void)setupWindow{
-    RESideMenu *menuController = [[RESideMenu alloc] initWithContentViewController:[[NSClassFromString(@"ILHomeViewController") alloc] init] leftMenuViewController:[[UIViewController alloc] init] rightMenuViewController:nil];
+    RESideMenu *menuController = [[RESideMenu alloc] initWithContentViewController:[[NSClassFromString(@"ILHomeViewController") alloc] init] leftMenuViewController:nil rightMenuViewController:[[UIViewController alloc] init]];
     self.window = [[UIWindow alloc] initWithFrame:SCREEN_BOUNDS];
     [self.window setRootViewController:menuController];
     [self.window makeKeyAndVisible];
 }
+
+-(void)setupLogger{
+    [DDLog addLogger:[DDTTYLogger sharedInstance]];
+    [[DDTTYLogger sharedInstance] setColorsEnabled:YES];
+}
+
 @end

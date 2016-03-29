@@ -7,13 +7,12 @@ PODS:
     - CocoaLumberjack/Core
   - CocoaLumberjack/Extensions (2.2.0):
     - CocoaLumberjack/Default
-  - CYLTableViewPlaceHolder (1.0.8)
   - DZNEmptyDataSet (1.7.3)
-  - FMDB (2.6):
-    - FMDB/standard (= 2.6)
-  - FMDB/standard (2.6)
-  - FSCalendar (1.8.2)
-  - INTULocationManager (4.1.1)
+  - FMDB (2.6.2):
+    - FMDB/standard (= 2.6.2)
+  - FMDB/standard (2.6.2)
+  - FSCalendar (2.0.1)
+  - INTULocationManager (4.2.0)
   - Masonry (0.6.4)
   - MJExtension (3.0.10)
   - PNChart (0.8.8):
@@ -24,7 +23,6 @@ PODS:
 
 DEPENDENCIES:
   - CocoaLumberjack
-  - CYLTableViewPlaceHolder
   - DZNEmptyDataSet
   - FMDB
   - FSCalendar
@@ -37,11 +35,10 @@ DEPENDENCIES:
 
 SPEC CHECKSUMS:
   CocoaLumberjack: 17fe8581f84914d5d7e6360f7c70022b173c3ae0
-  CYLTableViewPlaceHolder: 44075c119aab78bbc514c75d771d6565e19938e8
   DZNEmptyDataSet: dd7cca17c1d07dfa78956859b1e70a52505678ef
-  FMDB: c1968bab3ab0aed38f66cb778ae1e7fa9a652b6e
-  FSCalendar: 5e348e1352f7513096812e4023e39b64b856bb7e
-  INTULocationManager: 83c7373048d583cda57e25eefb9bb8a3675acf16
+  FMDB: 854a0341b4726e53276f2a8996f06f1b80f9259a
+  FSCalendar: 18117308f5876a8f6f0fe572085d543580c2c5e5
+  INTULocationManager: 73f8254b3d05c897c56bb13c190e5b7c648c0998
   Masonry: 281802d04d787ea2973179ee8bcb50500579ede2
   MJExtension: d86aacb740c87519d20e3cca55b6fa4be6cc7548
   PNChart: 25f91e9c4688af49c3647489760624d037f5383f
@@ -49,6 +46,6 @@ SPEC CHECKSUMS:
   TPKeyboardAvoiding: e5ce146b313de063957bfa75a13f1e9b0ff18ab7
   UICountingLabel: 1db4e7d023e1762171eb226d6dff47a7a84f27aa
 
-PODFILE CHECKSUM: e199e37d2ba7db706ea6b10e6d877e003bd1a6ef
+PODFILE CHECKSUM: 0363f1f92df0282d560305b78ffb09e23029c49d
 
 COCOAPODS: 1.0.0.beta.4

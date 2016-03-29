@@ -84,7 +84,6 @@ strip_invalid_archs() {
 
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
-  install_framework "$CONFIGURATION_BUILD_DIR/CYLTableViewPlaceHolder/CYLTableViewPlaceHolder.framework"
   install_framework "$CONFIGURATION_BUILD_DIR/CocoaLumberjack/CocoaLumberjack.framework"
   install_framework "$CONFIGURATION_BUILD_DIR/DZNEmptyDataSet/DZNEmptyDataSet.framework"
   install_framework "$CONFIGURATION_BUILD_DIR/FMDB/FMDB.framework"
@@ -98,7 +97,6 @@ if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "$CONFIGURATION_BUILD_DIR/UICountingLabel/UICountingLabel.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
-  install_framework "$CONFIGURATION_BUILD_DIR/CYLTableViewPlaceHolder/CYLTableViewPlaceHolder.framework"
   install_framework "$CONFIGURATION_BUILD_DIR/CocoaLumberjack/CocoaLumberjack.framework"
   install_framework "$CONFIGURATION_BUILD_DIR/DZNEmptyDataSet/DZNEmptyDataSet.framework"
   install_framework "$CONFIGURATION_BUILD_DIR/FMDB/FMDB.framework"

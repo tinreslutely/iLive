@@ -21,7 +21,12 @@
 		B52B61841C96B9FC00A31341 /* backImage@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = B52B617E1C96B9FC00A31341 /* backImage@3x.png */; };
 		B52B61851C96B9FC00A31341 /* JTNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = B52B61801C96B9FC00A31341 /* JTNavigationController.m */; };
 		B52B61861C96B9FC00A31341 /* UIViewController+JTNavigationExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = B52B61821C96B9FC00A31341 /* UIViewController+JTNavigationExtension.m */; };
-		B5FE416D1C9A54690096A0D5 /* TZPullVerticalView.m in Sources */ = {isa = PBXBuildFile; fileRef = B5FE416C1C9A54690096A0D5 /* TZPullVerticalView.m */; };
+		B547EF221CAA0F5D001CB86E /* ILCreditStoreDetailModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B547EF211CAA0F5D001CB86E /* ILCreditStoreDetailModel.m */; };
+		B59E8C131C9BA5F000C8E77D /* TZPullVerticalView.m in Sources */ = {isa = PBXBuildFile; fileRef = B59E8C121C9BA5F000C8E77D /* TZPullVerticalView.m */; };
+		B5E2BD621CA129EB006985F6 /* ILCreditStoreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B5E2BD611CA129EA006985F6 /* ILCreditStoreViewController.m */; };
+		B5E3AC7A1CA8BDFC00B427BC /* ILBaseNormalTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B5E3AC791CA8BDFC00B427BC /* ILBaseNormalTableViewCell.m */; };
+		B5E3AC7D1CA8D01600B427BC /* ILCreditStoreDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B5E3AC7C1CA8D01600B427BC /* ILCreditStoreDetailViewController.m */; };
+		B5E3AC821CA8D76400B427BC /* ILBaseNormalEditTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B5E3AC811CA8D76400B427BC /* ILBaseNormalEditTableViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,8 +76,18 @@
 		B52B61811C96B9FC00A31341 /* UIViewController+JTNavigationExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+JTNavigationExtension.h"; sourceTree = "<group>"; };
 		B52B61821C96B9FC00A31341 /* UIViewController+JTNavigationExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+JTNavigationExtension.m"; sourceTree = "<group>"; };
 		B52B61871C96BA5600A31341 /* iLive-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "iLive-Prefix.pch"; sourceTree = "<group>"; };
-		B5FE416B1C9A54690096A0D5 /* TZPullVerticalView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TZPullVerticalView.h; sourceTree = "<group>"; };
-		B5FE416C1C9A54690096A0D5 /* TZPullVerticalView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TZPullVerticalView.m; sourceTree = "<group>"; };
+		B547EF201CAA0F5D001CB86E /* ILCreditStoreDetailModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ILCreditStoreDetailModel.h; sourceTree = "<group>"; };
+		B547EF211CAA0F5D001CB86E /* ILCreditStoreDetailModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ILCreditStoreDetailModel.m; sourceTree = "<group>"; };
+		B59E8C111C9BA5F000C8E77D /* TZPullVerticalView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TZPullVerticalView.h; sourceTree = "<group>"; };
+		B59E8C121C9BA5F000C8E77D /* TZPullVerticalView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TZPullVerticalView.m; sourceTree = "<group>"; };
+		B5E2BD601CA129EA006985F6 /* ILCreditStoreViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ILCreditStoreViewController.h; sourceTree = "<group>"; };
+		B5E2BD611CA129EA006985F6 /* ILCreditStoreViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ILCreditStoreViewController.m; sourceTree = "<group>"; };
+		B5E3AC781CA8BDFC00B427BC /* ILBaseNormalTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ILBaseNormalTableViewCell.h; path = ../Credit/Store/ILBaseNormalTableViewCell.h; sourceTree = "<group>"; };
+		B5E3AC791CA8BDFC00B427BC /* ILBaseNormalTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ILBaseNormalTableViewCell.m; path = ../Credit/Store/ILBaseNormalTableViewCell.m; sourceTree = "<group>"; };
+		B5E3AC7B1CA8D01600B427BC /* ILCreditStoreDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ILCreditStoreDetailViewController.h; sourceTree = "<group>"; };
+		B5E3AC7C1CA8D01600B427BC /* ILCreditStoreDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ILCreditStoreDetailViewController.m; sourceTree = "<group>"; };
+		B5E3AC801CA8D76400B427BC /* ILBaseNormalEditTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ILBaseNormalEditTableViewCell.h; sourceTree = "<group>"; };
+		B5E3AC811CA8D76400B427BC /* ILBaseNormalEditTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ILBaseNormalEditTableViewCell.m; sourceTree = "<group>"; };
 		B5FE416E1C9A5BE40096A0D5 /* App.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = App.h; sourceTree = "<group>"; };
 		E33F9D47EABA9A93C8739B7B /* Pods-iLive.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iLive.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iLive/Pods-iLive.debug.xcconfig"; sourceTree = "<group>"; };
 		E50F51198C240BACF498FEC0 /* Pods-iLive.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iLive.release.xcconfig"; path = "Pods/Target Support Files/Pods-iLive/Pods-iLive.release.xcconfig"; sourceTree = "<group>"; };
@@ -212,6 +227,7 @@
 		B52B616E1C966CFE00A31341 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				B576458B1C9F9C4E00C6B37B /* Credit */,
 				B529674C1C979A3200CD6ABF /* Home */,
 				B529674B1C9799B700CD6ABF /* Base */,
 			);
@@ -221,6 +237,7 @@
 		B52B616F1C966D0900A31341 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				B547EF1E1CAA0E95001CB86E /* Credit */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -228,6 +245,8 @@
 		B52B61701C966D1100A31341 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				B5E3AC7F1CA8D6EE00B427BC /* Base */,
+				B5E3AC761CA8BCFC00B427BC /* Credit */,
 				B5FE41691C9A50700096A0D5 /* Home */,
 			);
 			path = Views;
@@ -286,6 +305,76 @@
 			path = JTNavigationController;
 			sourceTree = "<group>";
 		};
+		B547EF1E1CAA0E95001CB86E /* Credit */ = {
+			isa = PBXGroup;
+			children = (
+				B547EF1F1CAA0E9E001CB86E /* Store */,
+			);
+			path = Credit;
+			sourceTree = "<group>";
+		};
+		B547EF1F1CAA0E9E001CB86E /* Store */ = {
+			isa = PBXGroup;
+			children = (
+				B547EF201CAA0F5D001CB86E /* ILCreditStoreDetailModel.h */,
+				B547EF211CAA0F5D001CB86E /* ILCreditStoreDetailModel.m */,
+			);
+			path = Store;
+			sourceTree = "<group>";
+		};
+		B576458B1C9F9C4E00C6B37B /* Credit */ = {
+			isa = PBXGroup;
+			children = (
+				B576458D1C9F9D0700C6B37B /* Function */,
+				B576458C1C9F9CD300C6B37B /* Store */,
+			);
+			path = Credit;
+			sourceTree = "<group>";
+		};
+		B576458C1C9F9CD300C6B37B /* Store */ = {
+			isa = PBXGroup;
+			children = (
+				B5E2BD601CA129EA006985F6 /* ILCreditStoreViewController.h */,
+				B5E2BD611CA129EA006985F6 /* ILCreditStoreViewController.m */,
+				B5E3AC7B1CA8D01600B427BC /* ILCreditStoreDetailViewController.h */,
+				B5E3AC7C1CA8D01600B427BC /* ILCreditStoreDetailViewController.m */,
+			);
+			path = Store;
+			sourceTree = "<group>";
+		};
+		B576458D1C9F9D0700C6B37B /* Function */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Function;
+			sourceTree = "<group>";
+		};
+		B5E3AC761CA8BCFC00B427BC /* Credit */ = {
+			isa = PBXGroup;
+			children = (
+				B5E3AC771CA8BD0300B427BC /* Store */,
+			);
+			path = Credit;
+			sourceTree = "<group>";
+		};
+		B5E3AC771CA8BD0300B427BC /* Store */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Store;
+			sourceTree = "<group>";
+		};
+		B5E3AC7F1CA8D6EE00B427BC /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				B5E3AC781CA8BDFC00B427BC /* ILBaseNormalTableViewCell.h */,
+				B5E3AC791CA8BDFC00B427BC /* ILBaseNormalTableViewCell.m */,
+				B5E3AC801CA8D76400B427BC /* ILBaseNormalEditTableViewCell.h */,
+				B5E3AC811CA8D76400B427BC /* ILBaseNormalEditTableViewCell.m */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
 		B5FE41691C9A50700096A0D5 /* Home */ = {
 			isa = PBXGroup;
 			children = (
@@ -298,8 +387,8 @@
 		B5FE416A1C9A53F50096A0D5 /* TZPullVerticalView */ = {
 			isa = PBXGroup;
 			children = (
-				B5FE416B1C9A54690096A0D5 /* TZPullVerticalView.h */,
-				B5FE416C1C9A54690096A0D5 /* TZPullVerticalView.m */,
+				B59E8C111C9BA5F000C8E77D /* TZPullVerticalView.h */,
+				B59E8C121C9BA5F000C8E77D /* TZPullVerticalView.m */,
 			);
 			path = TZPullVerticalView;
 			sourceTree = "<group>";
@@ -493,15 +582,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B547EF221CAA0F5D001CB86E /* ILCreditStoreDetailModel.m in Sources */,
 				B52967651C9801DD00CD6ABF /* ILHomeView.m in Sources */,
 				B52B613F1C966C5B00A31341 /* AppDelegate.m in Sources */,
 				B52B61851C96B9FC00A31341 /* JTNavigationController.m in Sources */,
 				B52B61861C96B9FC00A31341 /* UIViewController+JTNavigationExtension.m in Sources */,
 				B529675C1C97AFDD00CD6ABF /* ILHomeViewController.m in Sources */,
+				B5E3AC821CA8D76400B427BC /* ILBaseNormalEditTableViewCell.m in Sources */,
+				B5E3AC7D1CA8D01600B427BC /* ILCreditStoreDetailViewController.m in Sources */,
 				B52967621C97B07500CD6ABF /* ILLeftMenuViewController.m in Sources */,
-				B5FE416D1C9A54690096A0D5 /* TZPullVerticalView.m in Sources */,
+				B5E2BD621CA129EB006985F6 /* ILCreditStoreViewController.m in Sources */,
+				B59E8C131C9BA5F000C8E77D /* TZPullVerticalView.m in Sources */,
 				B529675F1C97AFEE00CD6ABF /* ILBaseViewController.m in Sources */,
 				B52B613C1C966C5B00A31341 /* main.m in Sources */,
+				B5E3AC7A1CA8BDFC00B427BC /* ILBaseNormalTableViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -573,7 +667,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -610,7 +704,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -625,6 +719,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/$(PROJECT_NAME)/$(PROJECT_NAME)-Prefix.pch";
 				INFOPLIST_FILE = iLive/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.301Studio.iLive;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -639,6 +734,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/$(PROJECT_NAME)/$(PROJECT_NAME)-Prefix.pch";
 				INFOPLIST_FILE = iLive/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.301Studio.iLive;
 				PRODUCT_NAME = "$(TARGET_NAME)";

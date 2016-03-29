@@ -24,7 +24,7 @@
 
 #pragma mark private methods
 -(void)initView{
-    TZPullVerticalView *view = [[TZPullVerticalView alloc] initWithFrame:CGRectMake(0, 0, SCREEN_BOUNDS.size.width, 100)];
+    TZPullVerticalView *view = [[TZPullVerticalView alloc] init];
     [view setBackgroundColor:[UIColor grayColor]];
     [self.view addSubview:view];
 }

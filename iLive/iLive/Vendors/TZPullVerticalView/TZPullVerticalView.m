@@ -2,130 +2,70 @@
 //  TZPullVerticalView.m
 //  iLive
 //
-//  Created by 李晓毅 on 16/3/17.
+//  Created by 李晓毅 on 16/3/18.
 //  Copyright © 2016年 301 Studio. All rights reserved.
 //
 
 #import "TZPullVerticalView.h"
 
-static NSString *tzPullAnimationKey = @"bounce_Vertical";
-
-typedef struct{
-    int duration;
-    
-}TZAnimationParam;
-
 @implementation TZPullVerticalView{
-    CAShapeLayer *_horizontalLineLayer;//变化的线图层
-    TZAnimationParam param;
+    float _viewHeight;
+    float _pullBottomFreeHeight;
+    float _pullTopFreeHeight;
+    int _pullVerticalType;//1  向上  2向下
+    
 }
 
-#pragma mark life cycle
--(instancetype)initWithFrame:(CGRect)frame{
-    if(self = [super initWithFrame:frame]){
-        param.duration = 2;
-        [self makeLine];
-        [self addPanGesture];
+-(instancetype)init{
+    if(self = [super init]){
+        [self initData];
+        [self setupGestureRecognizer];
+        [self setFrame:CGRectMake(0, 0, SCREEN_WIDTH, _viewHeight)];
     }
     return self;
 }
 
-#pragma mark  - CAAnimationDelegate
-- (void) animationDidStop:(CAAnimation *)anim finished:(BOOL)flag {
-    if (anim == [_horizontalLineLayer animationForKey:tzPullAnimationKey] ) {
-        _horizontalLineLayer.path = [self getBottomLinePathWithAmount:0.0];
-        [_horizontalLineLayer removeAllAnimations];
-        [self addPanGesture];
-        
-        
-        CGFloat height = SCREEN_BOUNDS.size.height-100;
-        [_horizontalLineLayer removeFromSuperlayer];
-        _horizontalLineLayer.frame = CGRectMake(0, height, self.frame.size.width, 1);
-        
-        [UIView animateWithDuration:0.5 animations:^{
-            self.frame = CGRectMake(0, 0, self.frame.size.width, height);
-        } completion:^(BOOL finished) {
-            [self.layer addSublayer:_horizontalLineLayer];
-        }];
-        
+-(void)animationDidStop:(CAAnimation *)anim finished:(BOOL)flag{
+    if(flag){
+        if(_pullVerticalType == 1) _pullVerticalType = 2;
     }
 }
 
 #pragma mark action methods
--(void)hanleSlide:(UIPanGestureRecognizer*)panGestureRecognizer{
+-(void)handlePullSide:(UIPanGestureRecognizer*)panGestureRecognizer{
     CGPoint point = [panGestureRecognizer translationInView:self];
-    if(ABS(point.x) > ABS(point.y)){
-        DDLogDebug(@"返回");
-        return;
-    }
+    CGPoint vPoint = [panGestureRecognizer velocityInView:self];
+    CGPoint mPoint = [panGestureRecognizer locationInView:self];
+//    DDLogDebug(@"---translationInView--    x:%f,y:%f",point.x,point.y);
+//    DDLogDebug(@"---velocityInView--    x:%f,y:%f",vPoint.x,vPoint.y);
+//    DDLogDebug(@"---locationInView--    x:%f,y:%f",mPoint.x,mPoint.y);
     
-    if(panGestureRecognizer.state == UIGestureRecognizerStateEnded ||
-       panGestureRecognizer.state == UIGestureRecognizerStateCancelled ||
-       panGestureRecognizer.state == UIGestureRecognizerStateFailed){
-        if(point.y > 0){
-            [self removeGestureRecognizer:panGestureRecognizer];
-            [self animationLeftLineReturnFrom:fabs(point.y)];
-        }
+    DDLogDebug(@"---translationInView--    x:%f,y:%f",point.x,point.y);
+    if(_pullVerticalType == 1){
+        self.frame = CGRectMake(0, point.y, self.frame.size.width, self.frame.size.height);
         
-    }else if(panGestureRecognizer.state == UIGestureRecognizerStateChanged){
-        DDLogDebug(@"改变");
-        if(point.y >= 0){
-            _horizontalLineLayer.path = [self getBottomLinePathWithAmount:point.y];
-            if(point.y > self.bounds.size.width*0.5){
-                [self removeGestureRecognizer:panGestureRecognizer];
-                [self animationLeftLineReturnFrom:point.y];
-            }
-        }
+    }else if(_pullVerticalType == 2){
+        
     }
+//    if(point.y < 0){//向上
+//        if(_viewHeight + self.frame.origin.y > _pullTopFreeHeight) self.frame = CGRectMake(0, point.y, self.frame.size.width, self.frame.size.height);
+//    }else if(point.y > 0){//向下
+//        if(self.frame.origin.y < 0) self.frame = CGRectMake(0, point.y, self.frame.size.width, self.frame.size.height);
+//    }
 }
+
 
 #pragma mark private methods
--(void)makeLine{
-    _horizontalLineLayer = [CAShapeLayer layer];
-    [_horizontalLineLayer setFrame:CGRectMake(0, self.frame.size.height-1, self.frame.size.width, 1)];
-    _horizontalLineLayer.strokeColor = [[UIColor whiteColor] CGColor];
-    _horizontalLineLayer.lineWidth = 1.0;
-    _horizontalLineLayer.fillColor = [UIColor whiteColor].CGColor;
-    [self.layer addSublayer:_horizontalLineLayer];
+-(void)initData{
+    _pullTopFreeHeight = 68.0f;
+    _viewHeight = SCREEN_HEIGHT - _pullTopFreeHeight;
+    _pullTopFreeHeight = 68.0f;
+    _pullVerticalType = 1;
 }
 
--(void)addPanGesture{
-    UIPanGestureRecognizer *panGestureRecognizer = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(hanleSlide:)];
+-(void)setupGestureRecognizer{
+    UIPanGestureRecognizer *panGestureRecognizer = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(handlePullSide:)];
     [self addGestureRecognizer:panGestureRecognizer];
-}
-
--(CGPathRef)getBottomLinePathWithAmount:(CGFloat)amount{
-    UIBezierPath *verticalLine = [UIBezierPath bezierPath];
-    CGPoint leftPoint = CGPointMake(0, 0);
-    CGPoint midControlPoint = CGPointMake(self.bounds.size.width/2, amount);
-    CGPoint rightPoint = CGPointMake(self.bounds.size.width, 0);
-    [verticalLine moveToPoint:leftPoint];
-    [verticalLine addQuadCurveToPoint:rightPoint controlPoint:midControlPoint];
-    [verticalLine closePath];
-    return [verticalLine CGPath];
-}
-
--(void)animationLeftLineReturnFrom:(CGFloat)positionY{
-    CAKeyframeAnimation *morph = [CAKeyframeAnimation animationWithKeyPath:@"path"];
-    morph.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseIn];
-    morph.values = @[(id)[self getBottomLinePathWithAmount:positionY],
-                     (id)[self getBottomLinePathWithAmount:0.0]];
-    morph.duration = 0.3;
-    morph.removedOnCompletion = NO;
-    morph.fillMode = kCAFillModeForwards;
-    morph.delegate = self;
-    [_horizontalLineLayer addAnimation:morph forKey:tzPullAnimationKey];
-}
-
--(void)animationBottomLineReturnFrom:(CGFloat)positionY{
-    
-}
-
-#pragma mark public methods
--(void)setBackgroundColor:(UIColor *)backgroundColor{
-    [super setBackgroundColor:backgroundColor];
-    [_horizontalLineLayer setStrokeColor:backgroundColor.CGColor];
-    [_horizontalLineLayer setFillColor:backgroundColor.CGColor];
 }
 
 @end

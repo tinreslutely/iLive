@@ -36,7 +36,7 @@
     _textField.textAlignment = NSTextAlignmentLeft;
     _textField.layer.cornerRadius = 5;
     _textField.layer.borderWidth = SINGLE_LINE_WIDTH;
-    _textField.layer.borderColor = UIColorFromRGBA(146, 168, 209, 1).CGColor;
+    _textField.layer.borderColor = SUBJECTCOLOR.CGColor;
     [self.contentView addSubview:_textField];
     [_textField mas_makeConstraints:^(MASConstraintMaker *make) {
         make.left.equalTo(_textLabel.mas_right).with.offset(0);

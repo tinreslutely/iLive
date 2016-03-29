@@ -80,7 +80,7 @@
                 cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:submitCellIdentifier];
                 UIButton *button = [[UIButton alloc] init];
                 [button setTitle:@"提交" forState:UIControlStateNormal];
-                [button setBackgroundColor:UIColorFromRGBA(146, 168, 209, 1)];
+                [button setBackgroundColor:SUBJECTCOLOR];
                 button.layer.cornerRadius = 5;
                 [cell.contentView addSubview: button];
                 [button mas_makeConstraints:^(MASConstraintMaker *make) {

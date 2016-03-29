@@ -10,7 +10,6 @@
 
 @interface ILBaseNormalEditTableViewCell : UITableViewCell
 
-//@property(nonatomic,strong) UILabel *textLabel;
 @property(nonatomic,strong) UITextField *textField;
 @property(nonatomic,strong) UIButton *tipsButton;
 
